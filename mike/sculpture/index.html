@@ -1,0 +1,51 @@
+---
+layout: Mikedefault
+
+title: Mike Rage # Title of your site
+email: rockbobbie@gmail.com # Your contant email
+phone_number: 1.805.886.3474
+
+description:
+  Mike Rage, visual artist.
+
+avatar_url: "/images/Mike_avatar.png"
+
+---
+
+	<!-- Two -->
+	<section id="two">
+		<h2>Sculpture</h2>
+		<div class="row">
+			{% assign offset = 0 %}
+			{% for thing in site.Mike offset: {{offset}} %}
+			{% if thing.categories contains "Sculpture" %}
+				<article class="{% cycle '6u', '6u$' %} 12u(xsmall) work-item">
+				<a href="{{ thing.featured_image_url }}" class="image fit thumb">
+					<img src="{{ thing.thumbnail_image_url }}" alt="{{ thing.excerpt | remove: '<p>' | remove: '</p>' }}" />
+				</a>
+					<h3><a href="{{ thing.url }}">{{ thing.title }}</a></h3>
+					{{ thing.excerpt }}
+				</article>
+			{% endif %}	
+			{% endfor %}
+		</div>
+		<ul class="actions">
+			<li><a href=".." class="button special">Mike Home</a></li>
+	</section><!-- #two -->
+
+<!-- Three -->
+	<section>
+		<header>
+			<h2>Pricing</h2>
+			<p>Here's how I price my sculptures</p>
+		</header>
+		<p>Here's a bunch of words about pricing and stuff.</p>
+	</section><!-- Three -->
+
+<!-- Four -->
+	<section id="three">
+		{% include get-in-touch.html %}
+	</section><!-- Four -->
+
+
+			

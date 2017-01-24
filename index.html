@@ -39,11 +39,14 @@ layout: none
 		li a.button {
 			width: 100%;
 		}
-		footer {
+		#Front-footer {
 			position: absolute;
 			bottom: 0;
 			right: 0;
-			transform: translate(-50%, 150%);
+			transform: translate(-100%, 170%);
+		}
+		#Front-footer p {
+			display: inline;
 		}
 	</style>
 </head>
@@ -55,7 +58,10 @@ layout: none
 	<section>
 		<div>
 			<img src="{{ "/images/MikeSteph.jpg" | prepend: site.baseurl }}" alt="Mike and Steph, Rage Creations artists, hold hands." />
-			{% include footer.html %}
+			<div id="Front-footer">
+				<p style="font-size:1.1em; color:white;">All images and content &copy; Rage Creations, 2017</p>
+				<img src="/images/RageLogo.png" style="width:80px; height:80px;"/>
+			</div>
 		</div>
 		<ul>
 			<li>

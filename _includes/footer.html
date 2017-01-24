@@ -1,0 +1,46 @@
+<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<ul class="icons">
+
+
+{% if page.github_username %}
+<li>
+<a href="https://github.com/{{ page.github_username }}" class="icon fa-github">
+<span class="label">GitHub</span>
+</a>
+</li>
+{% endif %}
+
+
+
+{% if page.facebook_username %}
+<li>
+<a href="https://www.facebook.com/{{ page.facebook_username }}" class="icon fa-facebook">
+<span class="label">Facebook</span>
+</a>
+</li>
+{% endif %}
+
+{% if page.email %}
+<li>
+<a href="mailto:{{ page.email }}" class="icon fa-envelope-o">
+<span class="label">Email</span>
+</a>
+</li>
+{% endif %}
+
+					</ul><!-- .icons -->
+
+					{% if site.copyright_notices %}
+					<ul class="copyright">
+						{% for notice in site.copyright_notices %}
+						<li>{{ notice }}</li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+					<img src="/images/RageLogo.png" style="width:50px; height:50px;"/>
+
+				</div><!-- .inner -->
+			</footer>

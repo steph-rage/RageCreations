@@ -16,7 +16,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 front_page: "front_page.md"
 
 # The path to your avatar or to your site's logo.
-avatar_url: "/images/avatar.jpg"
+#avatar_url: "/images/avatar.jpg"
 
 # Custom copyright notice. Please retain the copyright statement for
 # original authors, listed below.

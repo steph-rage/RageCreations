@@ -33,66 +33,7 @@
 
 </div><!-- #main -->
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-
-					<ul class="icons">
-
-{% if page.twitter_username %}
-<li>
-<a href="https://twitter.com/{{ page.twitter_username }}" class="icon fa-twitter">
-<span class="label">Twitter</span>
-</a>
-</li>
-{% endif %}
-
-
-{% if page.dribbble_username %}
-<li>
-<a href="https://dribbble.com/{{ page.dribbble_username }}" class="icon fa-dribbble">
-<span class="label">Dribbble</span>
-</a>
-</li>
-{% endif %}
-
-{% if page.linkedin_username %}
-<li>
-<a href="https://linkedin.com/in/{{ page.linkedin_username }}" class="icon fa-linkedin">
-<span class="label">LinkedIn</span>
-</a>
-</li>
-{% endif %}
-
-
-{% if page.facebook_username %}
-<li>
-<a href="https://www.facebook.com/{{ page.facebook_username }}" class="icon fa-facebook">
-<span class="label">Facebook</span>
-</a>
-</li>
-{% endif %}
-
-{% if page.email %}
-<li>
-<a href="mailto:{{ page.email }}" class="icon fa-envelope-o">
-<span class="label">Email</span>
-</a>
-</li>
-{% endif %}
-
-					</ul><!-- .icons -->
-
-					{% if site.copyright_notices %}
-					<ul class="copyright">
-						{% for notice in site.copyright_notices %}
-						<li>{{ notice }}</li>
-						{% endfor %}
-					</ul>
-					{% endif %}
-
-				</div><!-- .inner -->
-			</footer>
+{% include footer.html %}
 
 		<!-- Scripts -->
 			<script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>

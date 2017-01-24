@@ -22,6 +22,9 @@ layout: none
 			max-height: 600px;
 			max-width: 100%;
 		}
+		section div {
+			position: inline-block;
+		}
 		ul, ul li {
 			margin: 0;
 			padding: 0;
@@ -36,6 +39,13 @@ layout: none
 		li a.button {
 			width: 100%;
 		}
+		footer {
+			background: red;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			transform: translate(-50%, 150%);
+		}
 	</style>
 </head>
 
@@ -44,7 +54,10 @@ layout: none
 		<h1>Rage Creations</h1>
 	</header>
 	<section>
-		<img src="{{ "/images/MikeSteph.jpg" | prepend: site.baseurl }}" alt="Mike and Steph, Rage Creations artists, hold hands." />
+		<div>
+			<img src="{{ "/images/MikeSteph.jpg" | prepend: site.baseurl }}" alt="Mike and Steph, Rage Creations artists, hold hands." />
+			{% include footer.html %}
+		</div>
 		<ul>
 			<li>
 				<a href="{{ "/Mike/" | prepend: site.baseurl }}" class='button'>Art by Mike</a>
@@ -54,5 +67,6 @@ layout: none
 			</li>
 		</ul>
 	</section>
+
 </body>
 </html>

@@ -6,7 +6,7 @@ title: Steph
 
 Hi, I'm Steph and I love making lots of things out of crochet! I discovered crochet about two years ago and it has quickly become an obsession. I get kinda bored repeating something I've already done, so custom projects are my specialty. Even if I've never done anything like it before, just ask! I love learning how to create new things. 
 
-## Types of croceht projects I can do:
+## Types of crochet projects I can do:
 
 * My current specialty is hats of all shapes, sizes, and colors.
 * Any other warm winter accessory: scarves, mittens, arm warmers, leg warmers, ...

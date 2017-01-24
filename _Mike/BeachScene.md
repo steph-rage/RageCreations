@@ -2,6 +2,7 @@
 title: Beach Scene
 featured_image_url: /images/Mike/Beach_scene.jpg
 thumbnail_image_url: /images/Mike/Beach_scene.jpg
-categories: Mike
+categories:
+- Paintings
 ---
 Painting Info

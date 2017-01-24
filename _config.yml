@@ -25,6 +25,10 @@ copyright_notices:
   - 'Design: <a href="https://html5up.net/strata">HTML5 UP</a>'
   - 'Jekyll Template: <a href="http://cloudcannon.com">Cloud Cannon</a>'
 
+collections:
+- Mike
+- Steph
+
 # Social links.
 # Replace the word 'example' with your username if you want to include the icon in the left sidebar
 # Delete the word 'example' if you don't want to include the icon in the left sidebar

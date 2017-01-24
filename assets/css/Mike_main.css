@@ -2512,7 +2512,7 @@
 			margin: 0 0 2em 0;
 		}
 
-		#header strong, #header b {
+		#header strong, #header b, #footer strong {
 			color: #ffffff;
 		}
 

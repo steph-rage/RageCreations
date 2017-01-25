@@ -13,38 +13,24 @@ avatar_url: "/images/Steph/Steph_avatar.png"
 
 ---
 
-
-	<!-- One -->
+<!-- One -->
 	<section id="one">
-		{% if page.front_page %}
-		{% capture front_page %}{% include_relative {{ site.front_page }} %}{% endcapture %}
+		{% capture front_page %}{% include_relative {{ page.front_page }} %}{% endcapture %}
 		{{ front_page | split: "---" | last | markdownify }}
-		{% else %}
-		{% for post in site.posts limit:1 %}
-			<header class="major">
-					<h2>{{ post.title }}</h2>
-					<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
-			</header>
-			{{ post.excerpt }}
-			<ul class="actions">
-				<li><a href="{{ post.url }}" class="button">Read More</a></li>
-			</ul>
-		{% endfor %}
-	{% endif %}
 	</section><!-- #one  -->
 
 	<!-- Two -->
 	<section id="two">
 		<h2>Recent Work</h2>
 		<div class="row">
-			{% if site.front_page %}{% assign offset = 0 %}{% else %}{% assign offset = 1 %}{% endif %}
-			{% for post in site.categories.Steph offset: {{offset}} %}
+			{% assign offset = 0 %}
+			{% for thing in site.Steph offset: {{offset}} %}
 				<article class="{% cycle '6u', '6u$' %} 12u(xsmall) work-item">
-				<a href="{{ post.featured_image_url }}" class="image fit thumb">
-					<img src="{{ post.thumbnail_image_url }}" alt="{{ post.excerpt | remove: '<p>' | remove: '</p>' }}" />
+				<a href="{{ thing.featured_image_url }}" class="image fit thumb">
+					<img src="{{ thing.thumbnail_image_url }}" alt="{{ thing.excerpt | remove: '<p>' | remove: '</p>' }}" />
 				</a>
-					<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-					{{ post.excerpt }}
+					<h3><a href="{{ thing.url }}">{{ thing.title }}</a></h3>
+					{{ thing.excerpt }}
 				</article>
 			{% endfor %}
 		</div>

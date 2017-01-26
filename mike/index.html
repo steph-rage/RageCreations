@@ -24,7 +24,7 @@ avatar_url: "/images/Mike_avatar.png"
 		<h2>Featured Work</h2>
 		<div class="row">
 			{% assign offset = 0 %}
-			{% for thing in site.Mike offset: {{offset}} %}
+			{% for thing in site.Mike offset: offset %}
 			{% if thing.categories contains "Featured" %}
 				<article class="{% cycle '6u', '6u$' %} 12u(xsmall) work-item">
 				<a href="{{ thing.featured_image_url }}" class="image fit thumb">

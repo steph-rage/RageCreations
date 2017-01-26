@@ -11,9 +11,9 @@ layout: none
 	<link rel="stylesheet" href="{{ "/assets/css/Steph_main.css" | prepend: site.baseurl }}" />
 	<style>
 		h1 {
-				text-align: center;
-				font: 72px "Source Sans Pro",Helvetica,sans-serif;
-				margin: 5% 0;
+			text-align: center;
+			font: 72px "Source Sans Pro",Helvetica,sans-serif;
+			margin: 5% 0;
 		}
 		section {
 			text-align: center;
@@ -40,28 +40,43 @@ layout: none
 			width: 100%;
 		}
 		#Front-footer {
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			transform: translate(-100%, 170%);
+			background-color: #660000;
+			text-align: right;
+			margin: 0 0;
+		}
+		#Front-header {
+			background-color: #660000;
+			text-align: left;
 		}
 		#Front-footer p {
-			display: inline;
+			margin: 0 0;
+			display: inline-block;
 		}
+		#contact-rage {
+			width: 48%;
+			text-align: left;
+		}
+		#copyright-stuff {
+			width: 48%;
+			text-align: right;
+		}
+		#spacer {
+			height: 75px;
+		}
+
 	</style>
 </head>
 
 <body>
 	<header>
+		<div id="Front-header">
+		<img src="/images/RageLogo.png" style="width:80px; height:80px;"/>
+		</div>
 		<h1>Rage Creations</h1>
 	</header>
 	<section>
 		<div>
 			<img src="{{ "/images/MikeSteph.jpg" | prepend: site.baseurl }}" alt="Mike and Steph, Rage Creations artists, hold hands." />
-			<div id="Front-footer">
-				<p style="font-size:1.1em; color:white;">All images and content &copy; Rage Creations, 2017</p>
-				<img src="/images/RageLogo.png" style="width:80px; height:80px;"/>
-			</div>
 		</div>
 		<ul>
 			<li>
@@ -72,6 +87,13 @@ layout: none
 			</li>
 		</ul>
 	</section>
+	<div id="spacer">
+	</div>
+	<div id="Front-footer">
+		<p id="contact-rage">Contact: stephlage621@gmail.com</p>
+		<p id="copyright-stuff" style="font-size:1.1em; color:white;">All images and content &copy; Rage Creations, 2017
+		</p>
+	</div>
 
 </body>
 </html>

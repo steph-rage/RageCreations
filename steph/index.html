@@ -24,7 +24,7 @@ avatar_url: "/images/Steph/Steph_avatar.png"
 		<h2>Recent Work</h2>
 		<div class="row">
 			{% assign offset = 0 %}
-			{% for thing in site.Steph offset: {{offset}} %}
+			{% for thing in site.Steph offset: offset %}
 				<article class="{% cycle '6u', '6u$' %} 12u(xsmall) work-item">
 				<a href="{{ thing.featured_image_url }}" class="image fit thumb">
 					<img src="{{ thing.thumbnail_image_url }}" alt="{{ thing.excerpt | remove: '<p>' | remove: '</p>' }}" />

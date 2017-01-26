@@ -1,0 +1,104 @@
+body {
+	font: "Source Sans Pro",Helvetica,sans-serif;
+}
+h1 {
+	text-align: center;
+	font: 72px "Source Sans Pro",Helvetica,sans-serif;
+	margin: 5% 0;
+}
+section {
+	text-align: center;
+}
+section img {
+	max-height: 600px;
+	max-width: 100%;
+}
+section div {
+	position: inline-block;
+}
+
+#Front-footer {
+	background-color: #660000;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+#Front-header {
+	background-color: #660000;
+	text-align: left;
+}
+#Front-footer p {
+	margin: 10px 0;
+	display: inline-block;
+	color: white;
+}
+#Front-footer p a {
+	color: #ffccff;
+}
+#contact-rage {
+	width: 48%;
+	text-align: left;
+}
+#copyright-stuff {
+	width: 48%;
+	text-align: right;
+}
+#spacer {
+	height: 10px;
+}
+#rage-logo {
+	width: 80px; 
+	padding: 10px;
+	height: 80px;
+}
+/*Remove margins, add background color*/
+.navbar {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #660000;
+}
+
+/* List items side by side */
+.navbar li {
+	float: left;
+	width: 30%;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: #ffccff;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 28px;
+    font-style: bold;
+    height: 40px;
+}
+
+/* Change background color of links on hover */
+.navbar li a:hover {
+	background-color: #555;
+}
+
+ul.navbar li:last-child a {
+  border-right: none;
+}
+
+ul.navbar li:hover ul {
+  display: block;
+  background: #fff;
+}
+
+/* keeps the tab background white */
+ul.navbar li:hover a {
+  background: #fff;
+  color: #660000;
+  text-shadow: none;
+}
+
+ul.navbar li:hover > a{
+  color: #660000;
+} 

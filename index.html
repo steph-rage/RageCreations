@@ -8,89 +8,33 @@ layout: none
 	<title>Rage Creations</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="{{ "/assets/css/Steph_main.css" | prepend: site.baseurl }}" />
-	<style>
-		h1 {
-			text-align: center;
-			font: 72px "Source Sans Pro",Helvetica,sans-serif;
-			margin: 5% 0;
-		}
-		section {
-			text-align: center;
-		}
-		section img {
-			max-height: 600px;
-			max-width: 100%;
-		}
-		section div {
-			position: inline-block;
-		}
-		ul, ul li {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-		ul li {
-			float: left;
-			box-sizing: border-box;
-			width: 50%;
-			padding: 10px 10px;
-		}
-		li a.button {
-			width: 100%;
-		}
-		#Front-footer {
-			background-color: #660000;
-			text-align: right;
-			margin: 0 0;
-		}
-		#Front-header {
-			background-color: #660000;
-			text-align: left;
-		}
-		#Front-footer p {
-			margin: 0 0;
-			display: inline-block;
-		}
-		#contact-rage {
-			width: 48%;
-			text-align: left;
-		}
-		#copyright-stuff {
-			width: 48%;
-			text-align: right;
-		}
-		#spacer {
-			height: 75px;
-		}
-
-	</style>
+	<link rel="stylesheet" href="{{ "/assets/css/front-page.css" | prepend: site.baseurl }}" />
 </head>
 
 <body>
-	<header>
-		<div id="Front-header">
-		<img src="/images/RageLogo.png" style="width:80px; height:80px;"/>
-		</div>
-		<h1>Rage Creations</h1>
+	<header id="Front-header">
+		<ul class="navbar">
+			<li>
+				<img id="rage-logo" src="/images/RageLogo.png"/>
+			</li>
+			<li>
+				<a href="{{ "/mike/" | prepend: site.baseurl }}">Art by Mike</a>
+			</li>
+			<li>
+				<a href="{{ "/steph/" | prepend: site.baseurl }}">Crochet by Steph</a>
+			</li>
+		</ul>
 	</header>
 	<section>
+		<h1>Rage Creations</h1>
 		<div>
 			<img src="{{ "/images/MikeSteph.jpg" | prepend: site.baseurl }}" alt="Mike and Steph, Rage Creations artists, hold hands." />
 		</div>
-		<ul>
-			<li>
-				<a href="{{ "/mike/" | prepend: site.baseurl }}" class="button special icon fa-paint-brush">Art by Mike</a>
-			</li>
-			<li>
-				<a href="{{ "/steph/" | prepend: site.baseurl }}" class="button special icon fa-link">Crochet by Steph</a>
-			</li>
-		</ul>
 	</section>
 	<div id="spacer">
 	</div>
 	<div id="Front-footer">
-		<p id="contact-rage">Contact: stephlage621@gmail.com</p>
+		<p id="contact-rage">Contact: <a href="mailto:{{ page.email }}" >stephlage621@gmail.com</a></p>
 		<p id="copyright-stuff" style="font-size:1.1em; color:white;">All images and content &copy; Rage Creations, 2017
 		</p>
 	</div>

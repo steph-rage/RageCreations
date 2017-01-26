@@ -8,24 +8,18 @@ phone_number: 1.619.916.8085
 description:
   Steph Rage, crochet artist.
 
-front_page: "front_page.md"
 avatar_url: "/images/Steph/Steph_avatar.png"
 
 ---
 
-<!-- One -->
-	<section id="one">
-		{% capture front_page %}{% include_relative {{ page.front_page }} %}{% endcapture %}
-		{{ front_page | split: "---" | last | markdownify }}
-	</section><!-- #one  -->
 
 	<!-- Two -->
 	<section id="two">
-		<h2>Featured Work</h2>
+		<h1>Rage crochet in action</h1>
 		<div class="row">
 			{% assign offset = 0 %}
 			{% for thing in site.Steph offset: offset %}
-			{% if thing.categories contains "Featured" %}
+			{% if thing.categories contains "In action" %}
 				<article class="{% cycle '6u', '6u$' %} 12u(xsmall) work-item">
 				<a href="{{ thing.featured_image_url }}" class="image fit thumb">
 					<img src="{{ thing.thumbnail_image_url }}" alt="{{ thing.excerpt | remove: '<p>' | remove: '</p>' }}" />
@@ -38,7 +32,7 @@ avatar_url: "/images/Steph/Steph_avatar.png"
 		</div>
 		<ul class="actions">
 			<li><a href="/steph/hats" class="button">Hats</a></li>
-			<li><a href="/steph/action" class="button">In action</a></li>
+			<li><a href="/steph" class="button">Featured</a></li>
 			<li><a href="/" class="button">Rage Home</a></li>
 		</ul>
 	</section><!-- #two -->

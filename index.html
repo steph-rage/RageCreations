@@ -23,6 +23,9 @@ layout: none
 			<li>
 				<a href="{{ "/steph/" | prepend: site.baseurl }}">Crochet by Steph</a>
 			</li>
+			<li class="icon">
+	    		<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+	  		</li>
 		</ul>
 	</header>
 	<section>
@@ -34,10 +37,11 @@ layout: none
 	<div id="spacer">
 	</div>
 	<div id="Front-footer">
-		<p id="contact-rage">Contact: <a href="mailto:{{ page.email }}" >stephlage621@gmail.com</a></p>
-		<p id="copyright-stuff" style="font-size:1.1em; color:white;">All images and content &copy; Rage Creations, 2017
+		<p id="contact-rage"><span class="hideme">Contact: </span><a href="mailto:{{ page.email }}" >stephlage621@gmail.com</a></p>
+		<p id="copyright-stuff"><span class="hideme">All images and content </span>&copy; Rage Creations
 		</p>
 	</div>
 
 </body>
+<script src="{{ "/asets/js/front-page.js" }} | prepend: site.baseurl"></script>
 </html>

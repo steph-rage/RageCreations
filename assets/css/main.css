@@ -44,6 +44,11 @@
 		border-spacing: 0;
 	}
 
+	p, li {
+		font-size: 120%;
+		color: #595959;
+	}
+
 	body {
 		-webkit-text-size-adjust: none;
 	}
@@ -2405,8 +2410,8 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #660000;
+			border-color: #660000;
 			color: #ffffff !important;
 		}
 
@@ -2414,8 +2419,8 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #ff3333;
+				border-color: #ff3333;
 			}
 
 			input[type="submit"].special:active,
@@ -2481,7 +2486,7 @@
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto 100%;
@@ -2495,6 +2500,13 @@
 		width: 35%;
 	}
 
+	#header.steph {
+		background-image: url("images/overlay.png"), url("../../images/Steph/Steph_background_smaller.jpg");
+	}
+
+	#header.mike {
+		background-image: url("images/overlay.png"), url("../../images/Mike/Mike_background.jpg");
+	}
 
 		#header > * {
 			-moz-flex-shrink: 0;
@@ -2512,7 +2524,7 @@
 			margin: 0 0 2em 0;
 		}
 
-		#header strong, #header b {
+		#header strong, #header b, #footer strong {
 			color: #ffffff;
 		}
 
@@ -2544,7 +2556,7 @@
 
 	#footer .copyright {
 		color: rgba(255, 255, 255, 0.4);
-		font-size: 1.2em;
+		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
 		padding: 0;
@@ -2951,7 +2963,7 @@
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), url("../../images/Steph/Steph_background.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;

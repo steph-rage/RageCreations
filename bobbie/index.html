@@ -1,24 +1,31 @@
 ---
 layout: Mikedefault
 
-title: Mike Rage # Title of your site
+title: Bobbie Rage # Title of your site
 email: rockbobbie@gmail.com # Your contant email
-phone_number: 1.805.886.3474
+phone_number: 1.209.677.7243
 
 description:
-  Mike Rage, visual artist.
+  Bobbie Rage, visual artist.
 
+front_page: "front_page.md"
 avatar_url: "/images/Mike_avatar.png"
 
 ---
 
+	<!-- One -->
+	<section id="one">
+		{% capture front_page %}{% include_relative {{ page.front_page }} %}{% endcapture %}
+		{{ front_page | split: "---" | last | markdownify }}
+	</section><!-- #one  -->
+
 	<!-- Two -->
 	<section id="two">
-		<h2>Sculpture</h2>
+		<h2>Featured Work</h2>
 		<div class="row">
 			{% assign offset = 0 %}
 			{% for thing in site.Mike offset: offset %}
-			{% if thing.categories contains "Sculpture" %}
+			{% if thing.categories contains "Featured" %}
 				<article class="{% cycle '6u', '6u$' %} 12u(xsmall) work-item">
 				<a href="{{ thing.featured_image_url }}" class="image fit thumb">
 					<img src="{{ thing.thumbnail_image_url }}" alt="{{ thing.excerpt | remove: '<p>' | remove: '</p>' }}" />
@@ -30,19 +37,19 @@ avatar_url: "/images/Mike_avatar.png"
 			{% endfor %}
 		</div>
 		<ul class="actions">
-			<li><a href="/mike/paintings" class="button special">Paintings</a></li>
-			<li><a href="/mike" class="button special">Mike Home</a></li>
+			<li><a href="/bobbie/paintings" class="button special">Paintings</a></li>
+			<li><a href="/bobbie/sculpture" class="button special">Sculpture</a></li>
 			<li><a href="/" class="button special">Rage Home</a></li>
 		</ul>
 	</section><!-- #two -->
 
 <!-- Three -->
 	<section>
-		<header>
+		<!-- <header>
 			<h2>Pricing</h2>
-			<p>Here's how I price my sculptures</p>
+			<p>Here's how I price my artwork</p>
 		</header>
-		<p>Here's a bunch of words about pricing and stuff.</p>
+		<p>Here's a bunch of words about pricing and stuff.</p> -->
 	</section><!-- Three -->
 
 <!-- Four -->
